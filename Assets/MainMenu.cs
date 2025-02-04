@@ -3,8 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void PlayGame()
+
+    void OnEnable()
     {
-        SceneManager.LoadSceneAsync(1);
+        EventManager.Clicked += PlayGame;
+    }
+
+    void OnDisable()
+    {
+        EventManager.Clicked -= PlayGame;
+
+    }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadSceneAsync(2);
     }
 }
