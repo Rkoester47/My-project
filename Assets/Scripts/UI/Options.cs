@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Options : MonoBehaviour
 {
-/*
+
     void OnEnable()
     {
         EventManager.Clicked += OpenOptions;
@@ -17,6 +17,6 @@ public class Options : MonoBehaviour
 
     public void OpenOptions()
     {
-        SceneManager.LoadSceneAsync(1);
-    }  */
+        SceneManager.LoadSceneAsync(2);
+    }  
 }
